@@ -9,7 +9,6 @@ public class Main {
         System.out.println(" Task 4");
         task4();
     }
-    int[] arr = generateRandomArray();
     public static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
         int[] arr = new int[30];
@@ -43,7 +42,7 @@ public class Main {
         for (int element: generateRandomArray()) {
             sum += element;
         }
-        double midSpending = sum / 30;
+        double midSpending = sum / 30.0;
         System.out.println("Средняя сумма трат за месяц составила "+ midSpending +" рублей");
     }
     public static void task4(){
