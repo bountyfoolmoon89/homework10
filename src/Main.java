@@ -43,7 +43,7 @@ public class Main {
             sum += element;
         }
         double midSpending = sum / 30.0;
-        System.out.println("Средняя сумма трат за месяц составила "+ midSpending +" рублей");
+        System.out.println("Средняя сумма трат за месяц составила "+ midSpending +" рублей.");
     }
     public static void task4(){
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
