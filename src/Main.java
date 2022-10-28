@@ -9,6 +9,7 @@ public class Main {
         System.out.println(" Task 4");
         task4();
     }
+    int[] arr = generateRandomArray();
     public static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
         int[] arr = new int[30];
