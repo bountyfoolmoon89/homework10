@@ -9,7 +9,7 @@ public class Main {
         System.out.println(" Task 4");
         task4();
     }
-    int[] arr = generateRandomArray();
+    static int[] arr = generateRandomArray();
     public static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
         int[] arr = new int[30];
@@ -20,7 +20,7 @@ public class Main {
     }
     public static void task1(){
         int sum = 0;
-        for (int element: generateRandomArray()) {
+        for (int element: arr) {
             sum += element;
         }
         System.out.println("Сумма трат за месяц составила "+sum+" рублей");
@@ -28,19 +28,19 @@ public class Main {
     public static void task2(){
         int maxSalary = -1;
         int minSalary = 200_001;
-        for (int i = 0; i < generateRandomArray().length; i++) {
-            if (generateRandomArray()[i]>maxSalary) {
-                maxSalary = generateRandomArray()[i];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i]>maxSalary) {
+                maxSalary = arr[i];
             }
-            if (generateRandomArray()[i]<minSalary) {
-                minSalary = generateRandomArray()[i];
+            if (arr[i]<minSalary) {
+                minSalary = arr[i];
             }
         }
         System.out.println("Минимальная сумма трат за день составила "+minSalary+" рублей. Максимальная сумма трат за день составила "+maxSalary+" рублей");
     }
     public static void task3(){
         int sum = 0;
-        for (int element: generateRandomArray()) {
+        for (int element: arr) {
             sum += element;
         }
         double midSpending = sum / 30.0;
